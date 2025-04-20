@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ST10442835PRGPOEPart1
+﻿namespace ST10442835PRGPOEPart1
 {
     class ChatBot
     {

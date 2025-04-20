@@ -12,7 +12,7 @@
             catch (Exception ex)
             {
                 Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine($"Fatal error: {ex.Message}");
+                Console.WriteLine($"An error: {ex.Message}");
                 Console.ResetColor();
             }
             finally

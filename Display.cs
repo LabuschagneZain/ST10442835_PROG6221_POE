@@ -14,11 +14,11 @@
             }
             catch (FileNotFoundException)
             {
-                Console.WriteLine($"File not found: {filePath}");
+                Console.WriteLine($"Could not find dile: {filePath}");
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"An error occurred: {ex.Message}");
+                Console.WriteLine($"Error occurred: {ex.Message}");
             }
         }
 

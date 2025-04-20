@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Media;
+﻿using System.Media;
 
 
 namespace ST10442835PRGPOEPart1
@@ -20,7 +15,7 @@ namespace ST10442835PRGPOEPart1
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Couldn't play welcome sound: " + ex.Message);
+                Console.WriteLine("Couldn't play cyberaware sound: " + ex.Message);
             }
         }
     }
