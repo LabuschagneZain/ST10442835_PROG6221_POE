@@ -1,7 +1,9 @@
 ﻿namespace ST10442835PRGPOEPart1
 {
+    // Handles all display-related functionality for the chatbot
     class Display
     {
+        // Displays the logo from a text file
         public void showFile()
         {
             string filePath = "Logo.txt";
@@ -22,6 +24,7 @@
             }
         }
 
+        // Prints the chatbot's response with a typing effect
         public static void PrintResponse(string response)
         {
             Console.ForegroundColor = ConsoleColor.Green;
@@ -37,6 +40,7 @@
             Console.WriteLine();
         }
 
+        // Prints a formatted section header
         public static void PrintSectionHeader(string title)
         {
             Console.ForegroundColor = ConsoleColor.Green;
@@ -44,6 +48,7 @@
             Console.ResetColor();
         }
 
+        // Gets and validates user input
         public static string GetValidUserInput()
         {
             while (true)

@@ -1,15 +1,18 @@
 ﻿namespace ST10442835PRGPOEPart1
 {
+    // Main chatbot class that handles conversation flow and responses
     class ChatBot
     {
         private readonly Voice voice = new Voice();
         private readonly Display display = new Display();
         private string userName;
 
+        // Main method to run the chatbot
         public void Run()
         {
             Start();
 
+            // Main conversation loop
             while (true)
             {
                 string userInput = Display.GetValidUserInput();
@@ -25,6 +28,7 @@
             Console.WriteLine("\nThank you for using the Cybersecurity Awareness Bot. Stay safe online!");
         }
 
+        // Initializes the chatbot and welcomes the user
         private void Start()
         {
             voice.PlaySound();
@@ -46,6 +50,7 @@
             Console.ResetColor();
         }
 
+        // Generates appropriate responses based on user input
         private string GetBotResponse(string userInput)
         {
             userInput = userInput.ToLower();

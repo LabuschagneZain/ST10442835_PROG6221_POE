@@ -3,8 +3,10 @@
 
 namespace ST10442835PRGPOEPart1
 {
+    // Handles playing audio files for the chatbot
     class Voice
     {
+        // Plays the pre-recorded sound file
         public void PlaySound()
         {
             try

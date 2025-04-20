@@ -2,12 +2,14 @@
 {
     internal class Program
     {
+        // Entry point for the application
         static void Main(string[] args)
         {
             try
             {
+                //Launch primary chatbot functionality
                 ChatBot bot = new ChatBot();
-                bot.Run();
+                bot.Run(); // Enters main conversation loop
             }
             catch (Exception ex)
             {
