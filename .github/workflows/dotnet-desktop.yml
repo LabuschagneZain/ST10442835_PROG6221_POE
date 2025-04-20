@@ -1,4 +1,4 @@
-name: .NET Core Desktop CI
+name: .NET Desktop
 
 on:
   push:
@@ -6,73 +6,34 @@ on:
   pull_request:
     branches: [ "main" ]
 
-env:
-  SOLUTION_NAME: ST10442835PRGPOEPart1.sln
-  WAP_PROJECT_DIR: ST10442835PRGPOEPart1.Package
-  WAP_PROJECT_PATH: ST10442835PRGPOEPart1.Package\ST10442835PRGPOEPart1.Package.wapproj
-  ARTIFACT_NAME: CybersecurityChatBot_MSIX
-
 jobs:
   build:
     strategy:
       matrix:
-        configuration: [Release] # Changed from Debug,Release to just Release for production builds
+        configuration: [Debug, Release]
 
     runs-on: windows-latest
 
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
-      with:
-        fetch-depth: 0
 
-    - name: Setup .NET Core
+    - name: Setup .NET 9.0
       uses: actions/setup-dotnet@v4
       with:
-        dotnet-version: '9.0.x' # Updated to match your project's target framework
-
-    - name: Setup MSBuild
-      uses: microsoft/setup-msbuild@v2
+        dotnet-version: 9.0.x
 
     - name: Restore dependencies
-      run: dotnet restore $env:SOLUTION_NAME
+      run: dotnet restore
 
-    - name: Run unit tests
-      run: dotnet test
+    - name: Build
+      run: dotnet build --configuration ${{ matrix.configuration }} --no-restore
 
-    - name: Decode and install signing certificate
-      run: |
-        # Create the package directory if it doesn't exist
-        New-Item -ItemType Directory -Force -Path $env:WAP_PROJECT_DIR
-        
-        # Decode and write the certificate
-        $pfxBytes = [System.Convert]::FromBase64String("${{ secrets.BASE64_ENCODED_PFX }}")
-        $certPath = Join-Path -Path $env:WAP_PROJECT_DIR -ChildPath "SigningCertificate.pfx"
-        [IO.File]::WriteAllBytes($certPath, $pfxBytes)
-        
-        # Verify certificate exists
-        if (Test-Path $certPath) {
-          Write-Host "Certificate successfully written to $certPath"
-        } else {
-          Write-Error "Failed to write certificate"
-          exit 1
-        }
+    - name: Publish
+      run: dotnet publish --configuration ${{ matrix.configuration }} --no-build --output publish
 
-    - name: Build WAP project
-      run: |
-        msbuild $env:WAP_PROJECT_PATH `
-          /p:Configuration=${{ matrix.configuration }} `
-          /p:UapAppxPackageBuildMode=StoreUpload `
-          /p:AppxBundle=Always `
-          /p:AppxBundlePlatforms="x86|x64" `
-          /p:PackageCertificateKeyFile="SigningCertificate.pfx" `
-          /p:PackageCertificatePassword="${{ secrets.PFX_KEY }}"
-
-    - name: Clean up certificate
-      run: Remove-Item -Path "$env:WAP_PROJECT_DIR\SigningCertificate.pfx" -Force -ErrorAction SilentlyContinue
-
-    - name: Upload artifact
+    - name: Upload artifacts
       uses: actions/upload-artifact@v4
       with:
-        name: ${{ env.ARTIFACT_NAME }}
-        path: ${{ env.WAP_PROJECT_DIR }}\AppPackages
+        name: ST10442835PRGPOEPart1-${{ matrix.configuration }}
+        path: publish/
