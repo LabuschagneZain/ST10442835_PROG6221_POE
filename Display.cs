@@ -7,7 +7,6 @@
         public void showFile()
         {
             string filePath = "Logo.txt";
-            string output = "";
 
             try
             {
@@ -38,14 +37,6 @@
 
             Console.ResetColor();
             Console.WriteLine();
-        }
-
-        // Prints a formatted section header
-        public static void PrintSectionHeader(string title)
-        {
-            Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine($"\n=== {title.ToUpper()} ===");
-            Console.ResetColor();
         }
 
         // Gets and validates user input
