@@ -1,41 +1,38 @@
-# ST10442835_PROG6221_Part1
-Cybersecurity Awareness ChatBot - README
-Overview
-This program is a Cybersecurity Awareness ChatBot designed to educate users about basic cybersecurity best practices. The chatbot provides interactive responses to user queries about password safety, phishing, and safe browsing practices.
+# ST10442835_PROG6221_Part2  
+**Cybersecurity Awareness ChatBot - README**
+
+## Overview
+This chatbot is designed to raise awareness about cybersecurity by simulating interactive conversations. Built using C#, it helps users understand best practices in password safety, phishing prevention, privacy, and safe browsing through personalized, engaging dialogue.
+
+## Part 2 Enhancements
+- **Keyword Recognition:** Detects key phrases like "password safety", "phishing", "privacy", and "scam" to provide relevant cybersecurity advice.
+- **Random Responses:** Offers varied, randomized answers to avoid repetition and feel more human-like.
+- **Memory and Recall:** Remembers topics the user is interested in (e.g., “I’m interested in phishing”) and recalls them later upon request.
+- **Sentiment Detection:** Responds to emotional cues like "worried", "mad", or "curious" to personalize tone and support.
+- **Conversation Flow:** Tracks last discussed topics and handles follow-up requests like “tell me more” or “remind me”.
+- **Delegates:** Demonstrates use of delegates for handling response output.
 
 ## Features
-Interactive Chat Interface: Users can ask questions and receive immediate responses from the bot
+- **Interactive Chat Interface**: Real-time Q&A with personalized feedback.
+- **Color-coded Console Output**: Enhanced readability for inputs and responses.
+- **Typewriter Effect**: Bot responses are displayed with a smooth animation.
+- **Startup Sound + ASCII Logo**: Welcomes the user with a logo and sound effect.
+- **Error Handling**: Graceful input validation and robust exception handling.
 
-## Cybersecurity Topics Covered:
-
-Password safety recommendations
-
-Phishing attack prevention
-
-Safe browsing practices
-
-User-Friendly Experience:
-
-Color-coded console output for better readability
-
-Typewriter effect for bot responses
-
-Welcome sound and ASCII art logo
-
-Personalized greetings using the user's name
-
-Error Handling: Comprehensive exception handling throughout the application
+## Topics Covered
+- Password safety
+- Phishing prevention
+- Scam awareness
+- Privacy tips
+- General safe browsing practices
 
 ## Components
 ChatBot.cs - Main chatbot logic and response handling
-
 Display.cs - Handles all console output and user input
-
 Voice.cs - Manages audio playback for welcome sound
-
 Program.cs - Entry point with error handling
-
 Logo.txt - ASCII art logo displayed at startup
+ChatBotRecording.wav - Optional sound file for startup
 
 ## How to Use
 Run the program
