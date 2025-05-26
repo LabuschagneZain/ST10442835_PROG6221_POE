@@ -40,3 +40,24 @@ C:\Users\zainl\OneDrive\Desktop\MSA\Year 2\Semester 1\PROG6221\POE PART 2\ST1044
 C:\Users\zainl\OneDrive\Desktop\MSA\Year 2\Semester 1\PROG6221\POE PART 2\ST10442835_PROG6221_Part2\ST10442835_PROG6221_Part2\obj\Debug\net9.0\ST10442835PRGPOEPart2.pdb
 C:\Users\zainl\OneDrive\Desktop\MSA\Year 2\Semester 1\PROG6221\POE PART 2\ST10442835_PROG6221_Part2\ST10442835_PROG6221_Part2\obj\Debug\net9.0\ST10442835PRGPOEPart2.genruntimeconfig.cache
 C:\Users\zainl\OneDrive\Desktop\MSA\Year 2\Semester 1\PROG6221\POE PART 2\ST10442835_PROG6221_Part2\ST10442835_PROG6221_Part2\obj\Debug\net9.0\ref\ST10442835PRGPOEPart2.dll
+C:\Users\lab_services_student\Desktop\ST10442835_PROG6221_Part2\bin\Debug\net9.0\ChatBotRecording.wav
+C:\Users\lab_services_student\Desktop\ST10442835_PROG6221_Part2\bin\Debug\net9.0\ST10442835PRGPOEPart2.exe
+C:\Users\lab_services_student\Desktop\ST10442835_PROG6221_Part2\bin\Debug\net9.0\Logo.txt
+C:\Users\lab_services_student\Desktop\ST10442835_PROG6221_Part2\bin\Debug\net9.0\ST10442835PRGPOEPart2.deps.json
+C:\Users\lab_services_student\Desktop\ST10442835_PROG6221_Part2\bin\Debug\net9.0\ST10442835PRGPOEPart2.runtimeconfig.json
+C:\Users\lab_services_student\Desktop\ST10442835_PROG6221_Part2\bin\Debug\net9.0\ST10442835PRGPOEPart2.dll
+C:\Users\lab_services_student\Desktop\ST10442835_PROG6221_Part2\bin\Debug\net9.0\ST10442835PRGPOEPart2.pdb
+C:\Users\lab_services_student\Desktop\ST10442835_PROG6221_Part2\bin\Debug\net9.0\System.Windows.Extensions.dll
+C:\Users\lab_services_student\Desktop\ST10442835_PROG6221_Part2\bin\Debug\net9.0\runtimes\win\lib\net9.0\System.Windows.Extensions.dll
+C:\Users\lab_services_student\Desktop\ST10442835_PROG6221_Part2\obj\Debug\net9.0\ST10442835PRGPOEPart2.csproj.AssemblyReference.cache
+C:\Users\lab_services_student\Desktop\ST10442835_PROG6221_Part2\obj\Debug\net9.0\ST10442835PRGPOEPart2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lab_services_student\Desktop\ST10442835_PROG6221_Part2\obj\Debug\net9.0\ST10442835PRGPOEPart2.AssemblyInfoInputs.cache
+C:\Users\lab_services_student\Desktop\ST10442835_PROG6221_Part2\obj\Debug\net9.0\ST10442835PRGPOEPart2.AssemblyInfo.cs
+C:\Users\lab_services_student\Desktop\ST10442835_PROG6221_Part2\obj\Debug\net9.0\ST10442835PRGPOEPart2.csproj.CoreCompileInputs.cache
+C:\Users\lab_services_student\Desktop\ST10442835_PROG6221_Part2\obj\Debug\net9.0\ST10442835PRGPOEPart2.sourcelink.json
+C:\Users\lab_services_student\Desktop\ST10442835_PROG6221_Part2\obj\Debug\net9.0\ST104428.F017D725.Up2Date
+C:\Users\lab_services_student\Desktop\ST10442835_PROG6221_Part2\obj\Debug\net9.0\ST10442835PRGPOEPart2.dll
+C:\Users\lab_services_student\Desktop\ST10442835_PROG6221_Part2\obj\Debug\net9.0\refint\ST10442835PRGPOEPart2.dll
+C:\Users\lab_services_student\Desktop\ST10442835_PROG6221_Part2\obj\Debug\net9.0\ST10442835PRGPOEPart2.pdb
+C:\Users\lab_services_student\Desktop\ST10442835_PROG6221_Part2\obj\Debug\net9.0\ST10442835PRGPOEPart2.genruntimeconfig.cache
+C:\Users\lab_services_student\Desktop\ST10442835_PROG6221_Part2\obj\Debug\net9.0\ref\ST10442835PRGPOEPart2.dll

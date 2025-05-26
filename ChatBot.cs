@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace ST10442835PRGPOEPart2
+﻿namespace ST10442835PRGPOEPart2
 {
     class ChatBot
     {
@@ -74,7 +71,7 @@ namespace ST10442835PRGPOEPart2
 
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine($"\nHello {userName}! I'm here to help you stay safe online.");
-            Console.WriteLine("You can ask me about password safety, phishing, scams, or privacy tips.");
+            Console.WriteLine("You can ask me about password safety, phishing, scams, vpn, malware or privacy tips.");
             Console.WriteLine("Enter 'Exit' or 'Quit' to end the program.");
             Console.WriteLine("---------------------------------------------------------------------------");
             Console.ResetColor();
@@ -82,25 +79,54 @@ namespace ST10442835PRGPOEPart2
 
         private void InitializeResponses()
         {
-            //Cybersecurity keyword responses
+            // Keyword responses
             keywordResponses = new Dictionary<string, List<string>>(StringComparer.OrdinalIgnoreCase)
-            {
-                { "password safety", new List<string> {
-                    "Make sure to use strong, unique passwords for each account.",
-                    "Avoid using personal details like birthdays or names in your passwords.",
-                    "Use a password manager to store your passwords securely." }
-                },
-                { "scam", new List<string> {
-                    "Online scams can trick you into giving up personal information.",
-                    "Always verify the sender of unexpected emails or messages.",
-                    "Be cautious of deals that sound too good to be true—they often are." }
-                },
-                { "privacy", new List<string> {
-                    "Adjust your social media privacy settings to control who sees your info.",
-                    "Avoid oversharing personal details online.",
-                    "Use encrypted messaging apps to protect your conversations." }
-                }
-            };
+{
+    { "password safety", new List<string> {
+        "Make sure to use strong, unique passwords for each account.",
+        "Avoid using personal details like birthdays or names in your passwords.",
+        "Use a password manager to store your passwords securely.",
+        "Enable two-factor authentication (2FA) wherever possible.",
+        "Change your passwords regularly, especially if a breach occurs."
+    }},
+    { "scam", new List<string> {
+        "Online scams can trick you into giving up personal information.",
+        "Always verify the sender of unexpected emails or messages.",
+        "Be cautious of deals that sound too good to be true—they often are.",
+        "Watch out for phishing emails that create a sense of urgency.",
+        "Never click suspicious links or download unexpected attachments."
+    }},
+    { "privacy", new List<string> {
+        "Adjust your social media privacy settings to control who sees your info.",
+        "Avoid oversharing personal details online.",
+        "Use encrypted messaging apps to protect your conversations.",
+        "Review app permissions and revoke those that are unnecessary.",
+        "Browse in incognito mode or use a VPN for extra privacy."
+    }},
+    { "malware", new List<string> {
+        "Malware can infect your device through suspicious downloads or email attachments.",
+        "Keep your antivirus software updated to catch new threats.",
+        "Avoid downloading software from untrusted websites.",
+        "Scan USB drives before accessing their contents.",
+        "Don’t ignore software updates—they often fix security vulnerabilities."
+    }},
+    { "phishing", new List<string> {
+        "Phishing attempts often pretend to be legitimate companies.",
+        "Always double-check email addresses and URLs before clicking.",
+        "If you're unsure, contact the company directly using official channels.",
+        "Never give out personal info through links in emails or texts.",
+        "Report suspicious emails to your IT department or email provider."
+    }},
+   
+    { "vpn", new List<string> {
+        "VPNs encrypt your internet traffic, keeping it safe from snoopers.",
+        "Use a VPN when browsing on public Wi-Fi networks.",
+        "Choose a reputable VPN provider that doesn’t log your data.",
+        "A VPN can also help you bypass geo-restricted content securely.",
+        "Make sure your VPN is active before logging into sensitive accounts."
+    }}
+};
+
 
             //Phishing tips
             phishingTips = new List<string>
@@ -111,14 +137,26 @@ namespace ST10442835PRGPOEPart2
                 "Don’t open attachments from unknown senders."
             };
 
-            //Sentiment-based responses
+            // Sentiment-based responses
             sentimentResponses = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase)
-            {
-                { "worried", "It's completely understandable to feel that way. Let me share some tips to help you feel more secure." },
-                { "curious", "I'm glad you're curious! Cybersecurity awareness is the first step to staying safe." },
-                { "frustrated", "Sorry you're feeling frustrated. Let’s tackle your concerns together." },
-                { "mad", "Sorry you're feeling mad. Let’s tackle your concerns together." }
-            };
+{
+             { "worried", "It's completely understandable to feel that way. Let me share some tips to help you feel more secure." },
+             { "curious", "I'm glad you're curious! Cybersecurity awareness is the first step to staying safe." },
+             { "frustrated", "Sorry you're feeling frustrated. Let’s tackle your concerns together." },
+             { "mad", "Sorry you're feeling mad. Let’s work through your concerns together and find a solution." },
+             { "anxious", "You're not alone in feeling anxious. I'm here to help break things down and support you." },
+             { "confused", "That’s okay—cybersecurity can be tricky. Let me explain things in a simpler way." },
+             { "scared", "It’s okay to be scared. I’ll help you understand the risks and how to stay safe." },
+             { "angry", "I understand your anger. Let’s figure out what’s wrong and work through it." },
+             { "hopeful", "That's great to hear! Let’s build on that and explore ways to stay secure." },
+             { "excited", "Awesome! It’s great to see your enthusiasm. Let's dive into some cool cybersecurity topics!" },
+             { "overwhelmed", "It can definitely feel like a lot. Let's take it step by step together." },
+             { "bored", "Let’s spice things up! I can show you some interesting cybersecurity facts or challenges." },
+             { "happy", "That’s wonderful to hear! Let’s keep that positive energy going while we learn more." },
+             { "sad", "I’m sorry you’re feeling down. Maybe learning something new can lift your mood a bit." },
+             { "grateful", "I'm glad I could help! Your appreciation means a lot." }
+};
+
         }
 
         private string GetBotResponse(string userInput)
@@ -200,7 +238,7 @@ namespace ST10442835PRGPOEPart2
                 return "My purpose is to educate about cybersecurity best practices and help keep you safe online.";
 
             //Fallback response
-            return "I'm not sure I understand. Could you try rephrasing or ask about passwords, scams, phishing, or privacy?";
+            return "I'm not sure I understand. Could you try rephrasing or ask about passwords, scams, phishing, vpn, malware or privacy?";
         }
 
         private string GetTopicTip(string topic)
