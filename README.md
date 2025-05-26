@@ -7,9 +7,9 @@ This chatbot is designed to raise awareness about cybersecurity by simulating in
 ## Part 2 Enhancements
 - **Keyword Recognition:** Detects key phrases like "password safety", "phishing", "privacy", and "scam" to provide relevant cybersecurity advice.
 - **Random Responses:** Offers varied, randomized answers to avoid repetition and feel more human-like.
-- **Memory and Recall:** Remembers topics the user is interested in (e.g., â€œIâ€™m interested in phishingâ€) and recalls them later upon request.
+- **Memory and Recall:** Remembers topics the user is interested in (e.g., “I’m interested in phishing”) and recalls them later upon request.
 - **Sentiment Detection:** Responds to emotional cues like "worried", "mad", or "curious" to personalize tone and support.
-- **Conversation Flow:** Tracks last discussed topics and handles follow-up requests like â€œtell me moreâ€ or â€œremind meâ€.
+- **Conversation Flow:** Tracks last discussed topics and handles follow-up requests like “tell me more” or “remind me”.
 - **Delegates:** Demonstrates use of delegates for handling response output.
 
 ## Features

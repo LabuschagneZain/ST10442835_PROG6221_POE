@@ -1,4 +1,4 @@
-﻿namespace ST10442835PRGPOEPart1
+﻿namespace ST10442835PRGPOEPart2
 {
     internal class Program
     {
@@ -7,7 +7,7 @@
         {
             try
             {
-                //Launch primary chatbot functionality
+                //Launch primary chatbot functionality  
                 ChatBot bot = new ChatBot();
                 bot.Run(); // Enters main conversation loop
             }
@@ -19,7 +19,9 @@
             }
             finally
             {
+                Console.ForegroundColor = ConsoleColor.Blue;
                 Console.WriteLine("\nPress any key to exit...");
+                Console.ResetColor();
                 Console.ReadKey();
             }
         }

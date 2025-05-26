@@ -1,7 +1,7 @@
 ﻿using System.Media;
 
 
-namespace ST10442835PRGPOEPart1
+namespace ST10442835PRGPOEPart2
 {
     // Handles playing audio files for the chatbot
     class Voice

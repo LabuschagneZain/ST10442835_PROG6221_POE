@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ST10442835PRGPOEPart1")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d5967b412ed6f200aee2658f9e970536b8d98ad5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a558d7c963e18702f8ba8687076fa1145ab80c73")]
 [assembly: System.Reflection.AssemblyProductAttribute("ST10442835PRGPOEPart1")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ST10442835PRGPOEPart1")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

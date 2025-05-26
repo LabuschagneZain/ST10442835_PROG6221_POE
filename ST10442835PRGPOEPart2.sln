@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35818.85 d17.13
+VisualStudioVersion = 17.13.35818.85
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ST10442835PRGPOEPart1", "ST10442835PRGPOEPart1.csproj", "{E5064B70-7D8E-49BB-A910-E9E511AC0460}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ST10442835PRGPOEPart2", "ST10442835PRGPOEPart2.csproj", "{E5064B70-7D8E-49BB-A910-E9E511AC0460}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

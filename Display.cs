@@ -1,4 +1,4 @@
-﻿namespace ST10442835PRGPOEPart1
+﻿namespace ST10442835PRGPOEPart2
 {
     // Handles all display-related functionality for the chatbot
     class Display
