@@ -1,58 +1,27 @@
-﻿namespace ST10442835PRGPOEPart2
+﻿using System.IO;
+
+namespace ST10442835_PROG6221_POE
 {
-    // Handles all display-related functionality for the chatbot
+
     class Display
     {
-        // Displays the logo from a text file
-        public void showFile()
+        // Loads the content of the logo file and returns it as a string (for display in a TextBlock)
+        public static string LoadLogo()
         {
             string filePath = "Logo.txt";
 
             try
             {
-                string fileContent = File.ReadAllText(filePath);
-                Console.WriteLine(fileContent);
+                return File.ReadAllText(filePath);
             }
             catch (FileNotFoundException)
             {
-                Console.WriteLine($"Could not find dile: {filePath}");
+                return $"[Could not find file: {filePath}]";
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Error occurred: {ex.Message}");
-            }
-        }
-
-        // Prints the chatbot's response with a typing effect
-        public static void PrintResponse(string response)
-        {
-            Console.ForegroundColor = ConsoleColor.Green;
-            Console.Write("\nBot: ");
-
-            foreach (char c in response)
-            {
-                Console.Write(c);
-                Thread.Sleep(30);
-            }
-
-            Console.ResetColor();
-            Console.WriteLine();
-        }
-
-        // Gets and validates user input
-        public static string GetValidUserInput()
-        {
-            while (true)
-            {
-                Console.Write("\nYou: ");
-                string input = Console.ReadLine();
-
-                if (!string.IsNullOrWhiteSpace(input))
-                    return input;
-
-                Console.WriteLine("Please enter a valid question or message.");
+                return $"[Error occurred: {ex.Message}]";
             }
         }
     }
 }
-
